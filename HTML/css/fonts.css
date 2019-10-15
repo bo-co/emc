@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family : "Regular";
+    font-display : swap;
+    src : url("../fonts/Roboto/regular.eot");
+    src : url("../fonts/Roboto/regular.eot?#iefix") format("embedded-opentype"),
+     	  url("../fonts/Roboto/regular.woff") format("woff"),
+     	  url("../fonts/Roboto/regular.otf") format("opentype"),
+     	  url("../fonts/Roboto/regular.ttf") format("truetype");
+   	font-style : normal;
+    font-weight : normal;
+	}
+
+@font-face {
+	font-family: "Bold";
+	font-display : swap;
+	src : url("../fonts/Roboto/bold.eot");
+	src : url("../fonts/Roboto/bold.eot?#iefix") format("embedded-opentype"),
+		  url("../fonts/Roboto/bold.woff") format("woff"),
+		  url("../fonts/Roboto/bold.otf") format("opentype"),
+     	  url("../fonts/Roboto/bold.ttf") format("truetype");
+	font-style : normal;
+	font-weight : normal;
+	}
+	
+@font-face {
+	font-family : "icomoon";
+	font-display : swap;
+  	src : 	url("../fonts/icomoon/icomoon.eot?081020191406");
+  	src :  	url("../fonts/icomoon/icomoon.eot?081020191406#iefix") format("embedded-opentype"),
+    		url("../fonts/icomoon/icomoon.ttf?081020191406") format("truetype"),
+    		url("../fonts/icomoon/icomoon.woff?081020191406") format("woff"),
+    		url("../fonts/icomoon/icomoon.svg?081020191406#icomoon") format("svg");
+  	font-weight : normal;
+  	font-style : normal;
+	}

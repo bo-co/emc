@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media (min-width : 721px) and (max-width : 960px) {
+	div.container > nav {
+		height : calc(var(--vh, 1vh) * 100 - 100px);
+		}
+	}
+
+@media (min-width : 481px) and (max-width : 720px) {
+	div.container > nav {
+		height : calc(var(--vh, 1vh) * 100 - 90px);
+		}
+	}
+	
+@media (max-width : 480px) {
+	div.container > nav {
+		height : calc(var(--vh, 1vh) * 100 - 80px);
+		}
+	}
