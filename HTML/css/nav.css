@@ -22,12 +22,14 @@ div.container > nav > a.phone  {
 	}
 	
 div.container > nav > div ul.menu {
+	position : relative;
+	z-index : 25;
 	display : flex;
 	display : -webkit-box;
 	display : -webkit-flex;
 	display : -ms-flexbox;
-	position : relative;
-	z-index : 25;
+	width : 100%;
+	margin : 0;
 	list-style : none;
 	background-color : rgba(255, 255, 255, 1);
 	}
@@ -111,9 +113,6 @@ div.container > nav > div ul.menu > li > ul.submenu > li > a:hover {
 		justify-content: space-between;
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between
-		width : 100%;
-		max-width : 640px;
-		margin : 0;
 		padding : 0 45px;
 		}
 
