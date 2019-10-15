@@ -112,7 +112,8 @@ div.container > nav > div ul.menu > li > ul.submenu > li > a:hover {
 	div.container > nav > div ul.menu {
 		justify-content: space-between;
 		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between
+		-ms-justify-content: space-between;
+		max-width : 640px;
 		padding : 0 45px;
 		}
 
@@ -191,7 +192,6 @@ div.container > nav > div ul.menu > li > ul.submenu > li > a:hover {
 		-webkit-flex-wrap : wrap;
 		-ms-flex-wrap : wrap;
 		padding : 0;
-		margin : 0;
 		}
 		
 	div.container > nav > div ul.menu > li {
@@ -239,7 +239,6 @@ div.container > nav > div ul.menu > li > ul.submenu > li > a:hover {
 		-webkit-flex-wrap : wrap;
 		-ms-flex-wrap : wrap;
 		padding : 0;
-		margin : 0;
 		}
 		
 	div.container > nav > div ul.menu > li {
@@ -294,7 +293,6 @@ div.container > nav > div ul.menu > li > ul.submenu > li > a:hover {
 		-webkit-flex-wrap : wrap;
 		-ms-flex-wrap : wrap;
 		padding : 0;
-		margin : 0;
 		}
 		
 	div.container > nav > div ul.menu > li {
@@ -348,7 +346,6 @@ div.container > nav > div ul.menu > li > ul.submenu > li > a:hover {
 		-webkit-flex-wrap : wrap;
 		-ms-flex-wrap : wrap;
 		padding : 0;
-		margin : 0;
 		}
 		
 	div.container > nav > div ul.menu > li {
