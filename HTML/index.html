@@ -14,9 +14,12 @@
     	<link rel="stylesheet" href="css/scrollbar.css?161020191154" />
     	<link rel="stylesheet" href="css/article.css?161020191154" />
     	<link rel="stylesheet" href="css/footer.css?161020191154" />
+    	<link rel="stylesheet" href="css/form.css?161020191154" />
     	<script defer src="js/jquery.js?161020191154"></script>
     	<script defer src="js/scrollbar.js?161020191154"></script>
     	<script defer src="js/template.js?161020191154"></script>
+    	<script defer src="js/inputmask.js?161020191154"></script>
+    	<script defer src="js/form.js?161020191154"></script>
 		<title>EMC engineering — инженерные системы</title>
 	</head>
 	<body onresize="resize();" onload="resize();">
@@ -110,9 +113,49 @@
 			</article>
 			<footer>
 				<div>
-					<div>
-						<h6>Получите коммерческое предложение</h6>
-						<blockquote>Оставьте свои контактные данные и, по возможности, напишите немного о деятельности вашей компании, чтобы мы смогли более точно сформировать для вас индивидуальное предложение.</blockquote>
+					<div class="form order">
+						<div>
+							<span>Спасибо!</span>
+							<blockquote>Ваше сообщение успешно отправлено. В ближайшее время с Вами свяжется наш специалист и ответит на все, интересующие Вас, вопросы.</blockquote>
+						</div>
+						<form action="#" name="application">
+							<input type="hidden" name="user_country" value="Не удалось установить местоположение">
+							<input type="hidden" name="user_region" value="Не удалось установить местоположение">
+							<input type="hidden" name="user_city" value="Не удалось установить местоположение">
+							<input type="hidden" name="send" value="bo-co[at]ya.ru,info[at]tarantul.zone">
+							<h6>Получите индивидуальное предложение</h6>
+							<blockquote>Оставьте свои контактные данные и, по возможности, напишите немного о деятельности вашей компании, чтобы мы смогли более точно сформировать для вас индивидуальное предложение.</blockquote>				
+							<div>
+								<div>
+									<ul>
+										<li class="required">
+											<input class="field" type="text" name="user_name" value="" data-form="order">
+											<span>Ваше имя</span>
+										</li>
+										<li>
+											<input class="field" type="email" name="user_email" value="" data-form="order">
+											<span>Ваш E-mail</span>
+										</li>
+										<li class="required">
+											<input class="field" type="tel" name="user_phone" value="" data-form="order">
+											<span>Ваш телефон</span>
+										</li>
+									</ul>
+								</div>
+								<div class="textarea">
+									<textarea class="field" name="user_message"></textarea>
+									<span>Задайте вопрос или<br>напишите комментарий</span>
+								</div>
+								<div class="required consent">
+									<input type="checkbox" name="consent" value="Y">
+									<span class="checkbox" data-form="order"></span>
+									<span>Даю <a href="#" title="согласие">согласие</a> на обработку персональных данных</span>
+								</div>
+								<div>
+									<button type="button" data-form="order"></button>
+								</div>
+							</div>
+						</form>	
 					</div>
 				</div>
 				<div>
