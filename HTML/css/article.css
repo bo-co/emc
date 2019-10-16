@@ -15,9 +15,6 @@ div.container > article > div.content > h1,
 div.container > article > div.content > h6 {
 	font-family : "Bold", Arial, Tahoma, Verdana, sans-serif;
 	text-align : center;
-	/* font-size : 28px;
-	line-height : 32px;
-	text-transform : uppercase; */
 	}
 	
 div.container > article > div.content > blockquote {
@@ -44,7 +41,7 @@ div.container > article > div.content > blockquote > span {
 	div.container > article > div.content > h6 {
 		padding : 30px 0;
 		font-size : 56px;
-		line-height : 56px;
+		line-height : 68px;
 		}
 	}
 
@@ -61,7 +58,7 @@ div.container > article > div.content > blockquote > span {
 	div.container > article > div.content > h6 {
 		padding : 25px 0;
 		font-size : 49px;
-		line-height : 49px;
+		line-height : 59px;
 		}
 	}
 
@@ -78,7 +75,7 @@ div.container > article > div.content > blockquote > span {
 	div.container > article > div.content > h6 {
 		padding : 20px 0;
 		font-size : 42px;
-		line-height : 42px;
+		line-height : 52px;	
 		}
 	}
 	
@@ -95,7 +92,7 @@ div.container > article > div.content > blockquote > span {
 	div.container > article > div.content > h6 {
 		padding : 15px 0;
 		font-size : 35px;
-		line-height : 35px;
+		line-height : 43px;	
 		}
 	}
 
@@ -112,6 +109,6 @@ div.container > article > div.content > blockquote > span {
 	div.container > article > div.content > h6 {
 		padding : 10px 0;
 		font-size : 28px;
-		line-height : 28px;
+		line-height : 34px;
 		}
 	}
