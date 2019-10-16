@@ -28,9 +28,9 @@ div.container > header > a.lang {
 	color : rgb(107, 166, 195);
 	}
 	
-div.container > header > a > span {
+/* div.container > header > a > span {
 	font-family : "Bold", Arial, Tahoma, Verdana, sans-serif;
-	}
+	} */
 	
 div.container > header > a.lang > span {
 	line-height : 36px;

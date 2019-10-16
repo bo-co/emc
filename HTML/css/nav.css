@@ -42,8 +42,8 @@ div.container > nav > div ul.menu > li {
 div.container > nav > div ul.menu > li > a,
 div.container > nav > div ul.menu > li > span {
 	display : block;
-	font-family : "Bold", Arial, Tahoma, Verdana, sans-serif;
-	text-transform : uppercase;
+	/* font-family : "Bold", Arial, Tahoma, Verdana, sans-serif;
+	text-transform : uppercase; */
 	transition : color 0.25s ease;
 	white-space : nowrap;
 	}
