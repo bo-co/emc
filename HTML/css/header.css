@@ -23,24 +23,44 @@ div.container > header > a.lang {
 	text-align : center;
 	text-transform : uppercase;
 	text-decoration : none;
-	border : solid 2px rgb(107, 166, 195);
-	background-color : rgba(255, 255, 255, 1);
-	color : rgb(107, 166, 195);
+	/* border : solid 2px rgb(107, 166, 195); */
+	background-color : rgba(107, 166, 195, 1);
+	/* color : rgb(107, 166, 195); */
+	color : rgba(255, 255, 255, 1);
 	}
 	
 /* div.container > header > a > span {
 	font-family : "Bold", Arial, Tahoma, Verdana, sans-serif;
 	} */
 	
-div.container > header > a.lang > span {
-	line-height : 36px;
+div.container > header > a.lang::before {
+	display : block;
+	position : absolute;
+	top : 0;
+	left : 0;
+	z-index : 10;
+	height : 100%;
+	width : 0;
+	content : "";
+	background-color : rgba(0, 124, 162, 1);
+	transition : width 0.25s ease;
 	}
 	
-div.container > header > a.lang:hover {
-	border : solid 2px rgb(0, 124, 162);
+div.container > header > a.lang:hover::before {
+	width : 100%;
+	}
+	
+div.container > header > a.lang > span {
+	position : relative;
+	z-index : 20;
+	line-height : 40px;
+	}
+	
+/*	div.container > header > a.lang:hover {
+	 border : solid 2px rgb(0, 124, 162);
 	background-color : rgba(0, 124, 162);
 	color : rgba(255, 255, 255, 1);
-	}	
+	}	 */
 	
 div.container > header > a.phone {
 	color : rgba(0, 0, 0, 1);
