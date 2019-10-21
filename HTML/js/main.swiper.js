@@ -1,9 +1,9 @@
 var main = null;
 
 $(document).ready(function() {
-	if (!main && $('div.container > article > div > div.swiper-main').length !== 0) {
+	if (!main && $('div.container > article > div.swiper-main').length !== 0) {
 		setTimeout(function() {
-			main = new Swiper('div.container > article > div > div.swiper-main', {
+			main = new Swiper('div.container > article > div.swiper-main', {
 				loop: true,
 				autoplay: {
     				delay: 3600,
@@ -20,7 +20,7 @@ $(document).ready(function() {
   				speed: 1200,
   				preloadImages: true,
   				pagination: {
-        			el: 'div.container > article > div > div.swiper-main > div',
+        			el: 'div.container > article > div.swiper-main > div',
         			clickable: true
       				}
 				});
