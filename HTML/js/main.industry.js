@@ -15,14 +15,17 @@ function startCount(element, percent) {
 	}
 
 $(document).ready(function() {
-	$(window).scroll(function() {	
-		el.each(function() {
-			if (!$(this).hasClass('active') && $(window).scrollTop() > $(this).offset().top - $(window).innerHeight() + $(this).outerHeight()/2) {
-				$(this).addClass('ring-' + $(this).data('percent'));
-				$(this).addClass('active');
-				startCount($(this).find('g > text'), $(this).data('percent'));
-				}
+	if (el.length !== 0) {
+		loadCSS('css/industry.css?' + $.now(), 'stylesheet');
+		$(window).scroll(function() {	
+			el.each(function() {
+				if (!$(this).hasClass('active') && $(window).scrollTop() > $(this).offset().top - $(window).innerHeight() + $(this).outerHeight()/2) {
+					$(this).addClass('ring-' + $(this).data('percent'));
+					$(this).addClass('active');
+					startCount($(this).find('g > text'), $(this).data('percent'));
+					}
+				});
 			});
-		});
+		}
 	return false;
 	});
