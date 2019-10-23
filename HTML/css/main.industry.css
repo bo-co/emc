@@ -87,23 +87,10 @@ div.container > article > div.industry > ul > li > div > div {
 	
 .chart-percent {
   	font-size : 0.6em;
-  	text-anchor : middle;
   	-moz-transform : translateY(-19%);
   	-ms-transform : translateY(-19%);
   	-webkit-transform : translateY(-19%);
   	transform : translateY(-19%);
-	}
-	
-.donut-ring,
-.donut-segment {
-	fill : transparent;
-	}
-
-.donut-ring {
-  	stroke : #6ba6c3;
-  	stroke-width : 0.25;
-    stroke-dasharray: 100, 0;
-    stroke-dashoffset : 125;
 	}
 	
 .ring-60 .donut-ring {
@@ -133,13 +120,6 @@ div.container > article > div.industry > ul > li > div > div {
     	stroke-dasharray : 38, 62;
     	stroke-dashoffset : 64;
   		}
-	}
-	
-.donut-segment {
-  	stroke : #007ca2;
-  	stroke-width : 1;
-    stroke-dasharray: 0, 100;
-    stroke-dashoffset : 25;
 	}
 	
 .ring-60 .donut-segment {
