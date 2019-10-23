@@ -91,7 +91,7 @@ div.container > article > div.service > div > ul > li > a:hover::before {
 	transform : scale(1.05);
 	}
 	
-div.container > article > div.service > div > a {
+div.container > article > div.service.main > div > a {
 	display : block;
 	position : relative;
 	width : 260px;
@@ -99,8 +99,8 @@ div.container > article > div.service > div > a {
 	text-decoration : none;
 	}
 	
-div.container > article > div.service > div > a::before,
-div.container > article > div.service > div > a::after {
+div.container > article > div.service.main > div > a::before,
+div.container > article > div.service.main > div > a::after {
 	display : block;
 	position : absolute;
 	top : 0;
@@ -109,24 +109,24 @@ div.container > article > div.service > div > a::after {
 	content : "";
 	}
 
-div.container > article > div.service > div > a::before {
+div.container > article > div.service.main > div > a::before {
 	z-index : 10;
 	width : 100%;
 	background-color : rgba(107, 166, 195, 1);
 	}
 	
-div.container > article > div.service > div > a::after {
+div.container > article > div.service.main > div > a::after {
 	z-index : 15;
 	width : 0;
 	background-color : rgba(0, 124, 162, 1);
 	transition : width 0.25s ease;
 	}
 	
-div.container > article > div.service > div > a:hover::after {
+div.container > article > div.service.main > div > a:hover::after {
 	width : 100%;
 	}
 	
-div.container > article > div.service > div > a > span {
+div.container > article > div.service.main > div > a > span {
 	position : relative;
 	z-index : 20;
 	display : block;
@@ -175,7 +175,7 @@ div.container > article > div.service > div > a > span {
 		padding : 30px 60px;
 		}
 		
-	div.container > article > div.service > div > a {
+	div.container > article > div.service.main > div > a {
 		margin : 30px auto;
 		}
 	}
@@ -219,7 +219,7 @@ div.container > article > div.service > div > a > span {
 		padding : 25px 50px;
 		}
 		
-	div.container > article > div.service > div > a {
+	div.container > article > div.service.main > div > a {
 		margin : 25px auto;
 		}
 	}
@@ -263,7 +263,7 @@ div.container > article > div.service > div > a > span {
 		padding : 20px 40px;
 		}
 		
-	div.container > article > div.service > div > a {
+	div.container > article > div.service.main > div > a {
 		margin : 20px auto;
 		}
 	}
@@ -307,7 +307,7 @@ div.container > article > div.service > div > a > span {
 		padding : 15px 30px;
 		}
 		
-	div.container > article > div.service > div > a {
+	div.container > article > div.service.main > div > a {
 		margin : 15px auto;
 		}
 	}
@@ -351,7 +351,7 @@ div.container > article > div.service > div > a > span {
 		padding : 10px 20px;
 		}
 		
-	div.container > article > div.service > div > a {
+	div.container > article > div.service.main > div > a {
 		margin : 10px auto;
 		}
 	}
