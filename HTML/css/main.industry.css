@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+div.container > article > div.industry > ul {
+	display : flex;
+	display : -webkit-box;
+	display : -webkit-flex;
+	display : -ms-flexbox;
+	flex-wrap : wrap;
+	-webkit-flex-wrap : wrap;
+	-ms-flex-wrap : wrap;
+	padding : 0;
+	list-style : none;
+	}
+	
+div.container > article > div.industry > ul > li {
+	position : relative;
+	background-position : 50% 50%;
+	background-repeat : no-repeat;
+	background-size : cover;
+	}
+	
+div.container > article > div.industry > ul > li::before,
+div.container > article > div.industry > ul > li::after {
+	position : absolute;
+	left : 0;
+	z-index : 10;
+	width : 100%;
+	height : 50%;
+	content : "";
+	}
+	
+div.container > article > div.industry > ul > li::before {
+	top : 0;
+	background-image: linear-gradient(to bottom, rgba(0, 34, 72, 1), rgba(0, 34, 72, 0.5), rgba(0, 34, 72, 0));
+	}
+	
+div.container > article > div.industry > ul > li::after {
+	bottom : 0;
+	background-image: linear-gradient(to top, rgba(0, 34, 72, 1), rgba(0, 34, 72, 0.5), rgba(0, 34, 72, 0));
+	}
+	
+div.container > article > div.industry > ul > li:first-child {
+	background-image : url("../img/industry.1.jpg");
+	}
+	
+div.container > article > div.industry > ul > li:nth-child(2) {
+	background-image : url("../img/industry.2.jpg");
+	}
+	
+div.container > article > div.industry > ul > li:nth-child(3) {
+	background-image : url("../img/industry.3.jpg");
+	}
+	
+div.container > article > div.industry > ul > li:last-child {
+	background-image : url("../img/industry.4.jpg");
+	}
+	
+div.container > article > div.industry > ul > li > span {
+	display : block;
+	font-size : 20px;
+	line-height : 26px;
+	text-align : center;
+	color : rgba(255, 255, 255, 1);
+	}
+
+div.container > article > div.industry > ul > li > span,	
+div.container > article > div.industry > ul > li > div {
+	position : relative;
+	z-index : 20;
+	}
+	
+div.container > article > div.industry > ul > li > div > div {
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	}
+	
+.chart-text {
+	font-size : 18px;
+  	-moz-transform : translateY(25%);
+  	-ms-transform : translateY(25%);
+  	-webkit-transform : translateY(25%);
+  	transform : translateY(25%);
+	}
+	
+.chart-percent {
+  	font-size : 0.6em;
+  	text-anchor : middle;
+  	-moz-transform : translateY(-19%);
+  	-ms-transform : translateY(-19%);
+  	-webkit-transform : translateY(-19%);
+  	transform : translateY(-19%);
+	}
+	
+.donut-ring,
+.donut-segment {
+	fill : transparent;
+	}
+
+.donut-ring {
+  	stroke : #6ba6c3;
+  	stroke-width : 0.25;
+    stroke-dasharray: 100, 0;
+    stroke-dashoffset : 125;
+	}
+	
+.ring-60 .donut-ring {
+  	stroke-dasharray : 38, 62;
+  	stroke-dashoffset : 64;
+  	animation : ring-60 2s;
+  	-webkit-animation : ring-60 2s;	
+	}
+	
+@keyframes ring-60 {
+	from {
+    	stroke-dasharray: 98, 2;
+    	stroke-dashoffset : 124;
+  		}
+  	to {
+    	stroke-dasharray : 38, 62;
+    	stroke-dashoffset : 64;
+  		}
+	}
+
+@-webkit-keyframes ring-60 {
+	from {
+    	stroke-dasharray: 98, 2;
+    	stroke-dashoffset : 124;
+  		}
+  	to {
+    	stroke-dasharray : 38, 62;
+    	stroke-dashoffset : 64;
+  		}
+	}
+	
+.donut-segment {
+  	stroke : #007ca2;
+  	stroke-width : 1;
+    stroke-dasharray: 0, 100;
+    stroke-dashoffset : 25;
+	}
+	
+.ring-60 .donut-segment {
+  	stroke-dasharray : 60, 40;
+  	animation : segment-60 2s;
+  	-webkit-animation : segment-60 2s;
+	}
+	
+@keyframes segment-60 {
+	from {
+    	stroke-dasharray: 0, 100;
+  		}
+  	to {
+    	stroke-dasharray : 60, 40;
+  		}
+	}
+
+@-webkit-keyframes segment-60 {
+  	from {
+    	stroke-dasharray: 0, 100;
+  		}
+  	to {
+    	stroke-dasharray : 60, 40;
+  		}
+	}
+	
+.ring-20 .donut-ring {
+  	stroke-dasharray : 78, 22;
+  	stroke-dashoffset : 104;
+  	animation : ring-20 2s;
+  	-webkit-animation : ring-20 2s;	
+	}
+	
+@keyframes ring-20 {
+	from {
+    	stroke-dasharray: 98, 2;
+    	stroke-dashoffset : 124;
+  		}
+  	to {
+    	stroke-dasharray : 78, 22;
+    	stroke-dashoffset : 104;
+  		}
+	}
+
+@-webkit-keyframes ring-20 {
+	from {
+    	stroke-dasharray: 98, 2;
+    	stroke-dashoffset : 124;
+  		}
+  	to {
+    	stroke-dasharray : 78, 22;
+    	stroke-dashoffset : 104;
+  		}
+	}
+	
+.ring-20 .donut-segment {
+  	stroke-dasharray : 20, 80;
+  	animation : segment-20 2s;
+  	-webkit-animation : segment-20 2s;
+	}
+	
+@keyframes segment-20 {
+	from {
+    	stroke-dasharray: 0, 100;
+  		}
+  	to {
+    	stroke-dasharray : 20, 80;
+  		}
+	}
+
+@-webkit-keyframes segment-20 {
+  	from {
+    	stroke-dasharray: 0, 100;
+  		}
+  	to {
+    	stroke-dasharray : 20, 80;
+  		}
+	}
+	
+.ring-10 .donut-ring {
+  	stroke-dasharray : 88, 12;
+  	stroke-dashoffset : 114;
+  	animation : ring-10 2s;
+  	-webkit-animation : ring-10 2s;	
+	}
+	
+@keyframes ring-10 {
+	from {
+    	stroke-dasharray: 98, 2;
+    	stroke-dashoffset : 124;
+  		}
+  	to {
+    	stroke-dasharray : 88, 12;
+    	stroke-dashoffset : 114;
+  		}
+	}
+
+@-webkit-keyframes ring-10 {
+	from {
+    	stroke-dasharray: 98, 2;
+    	stroke-dashoffset : 124;
+  		}
+  	to {
+    	stroke-dasharray : 88, 12;
+    	stroke-dashoffset : 114;
+  		}
+	}
+	
+.ring-10 .donut-segment {
+  	stroke-dasharray : 10, 90;
+  	animation : segment-10 2s;
+  	-webkit-animation : segment-10 2s;
+	}
+	
+@keyframes segment-10 {
+	from {
+    	stroke-dasharray: 0, 100;
+  		}
+  	to {
+    	stroke-dasharray : 10, 90;
+  		}
+	}
+
+@-webkit-keyframes segment-10 {
+  	from {
+    	stroke-dasharray: 0, 100;
+  		}
+  	to {
+    	stroke-dasharray : 10, 90;
+  		}
+	}
+	
+@media (min-width : 1201px) {
+	div.container > article > div.industry > ul {
+		margin : 30px 0 0 0;
+		}
+
+	div.container > article > div.industry > ul > li { 
+		width : 25%;
+		}
+		
+	div.container > article > div.industry > ul > li > div {
+		padding-top : 100%;
+		}
+		
+	div.container > article > div.industry > ul > li > span {
+		padding : 60px 30px;
+		}
+	}
+	
+@media (min-width : 961px) and (max-width : 1200px) {
+	div.container > article > div.industry > ul {
+		margin : 25px 0 0 0;
+		}
+
+	div.container > article > div.industry > ul > li { 
+		width : 25%;
+		}
+		
+	div.container > article > div.industry > ul > li > div {
+		padding-top : 100%;
+		}
+		
+	div.container > article > div.industry > ul > li > span {
+		padding : 50px 25px;
+		}
+	}
+	
+@media (min-width : 721px) and (max-width : 960px) {
+	div.container > article > div.industry > ul {
+		margin : 20px 0 0 0;
+		}
+
+	div.container > article > div.industry > ul > li { 
+		width : 50%;
+		}
+		
+	div.container > article > div.industry > ul > li > div {
+		padding-top : 100%;
+		}
+		
+	div.container > article > div.industry > ul > li > span {
+		padding : 40px 20px;
+		}
+	}
+	
+@media (min-width : 481px) and (max-width : 720px) {
+	div.container > article > div.industry > ul {
+		margin : 15px 0 0 0;
+		}
+
+	div.container > article > div.industry > ul > li { 
+		width : 50%;
+		}
+		
+	div.container > article > div.industry > ul > li > div {
+		padding-top : 100%;
+		}
+		
+	div.container > article > div.industry > ul > li > span {
+		padding : 30px 15px;
+		}
+	}
+	
+@media (max-width : 480px) {
+	div.container > article > div.industry > ul {
+		margin : 10px 0 0 0;
+		}
+		
+	div.container > article > div.industry > ul > li { 
+		width : 100%;
+		}
+		
+	div.container > article > div.industry > ul > li > div {
+		padding-top : 100%;
+		}
+		
+	div.container > article > div.industry > ul > li > span {
+		padding : 20px 10px;
+		}
+	}
