@@ -50,5 +50,14 @@ $(document).ready(function() {
   		}, function() {
     	$('div.container > nav > div > ul > li.choose').css('width', '0px');
   		});
+	$('.move').on('click', function(e) {
+		if ($('div.container').hasClass('opened')) {
+			$('div.container').removeClass('opened');
+			}
+		$('html, body').stop().animate({
+			scrollTop: $('#' + $(this).data('move')).offset().top - $('div.container > header').outerHeight() + Math.abs($('div.container > header').position().top)
+			}, 600);
+		e.preventDefault();
+		});
 	return false;
 	});
