@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+div.container > article > div.service.main {
+	background-color : rgba(245, 245, 245, 1);
+	}
+	
+div.container > article > div.service > div {
+	max-width : 1320px;
+	margin : 0 auto;
+	}
+	
+div.container > article > div.service > div > h6 {
+	font-family : "Bold", Arial, Tahoma, Verdana, sans-serif;
+	text-align : center;
+	}
+	
+div.container > article > div.service > div > ul {
+	display : flex;
+	display : -webkit-box;
+	display : -webkit-flex;
+	display : -ms-flexbox;
+	flex-wrap : wrap;
+	-webkit-flex-wrap : wrap;
+	-ms-flex-wrap : wrap;
+	padding : 0;
+	margin : 0;
+	list-style : none;
+	counter-reset : num;
+	}
+
+div.container > article > div.service > div > ul > li,
+div.container > article > div.service > div > ul > li > a {
+	position : relative;
+	}
+	
+div.container > article > div.service > div > ul > li::before,
+div.container > article > div.service > div > ul > li > a::before {
+	position : absolute;
+	z-index : 10;
+	}
+	
+div.container > article > div.service > div > ul > li > a::before {	
+    content : counter(decimal-leading-zero)counter(num);
+    counter-increment : num;
+	font-size : 60px;
+	line-height : 60px;
+	color : rgba(255, 255, 255, 1);
+	transition : all 0.25s ease;
+   	}
+   	
+div.container > article > div.service > div > ul > li::before {
+	width : 2px;
+	background-color : rgba(38, 123, 152, 1);
+	content : "";
+	}
+	
+div.container > article > div.service > div > ul > li > a {
+	display : block;
+	width : 100%;
+	height : 100%;
+	text-decoration : none;
+	overflow : hidden;
+	}
+	
+div.container > article > div.service > div > ul > li > a > img {
+	width : 100%;
+	height : auto;
+	transition : all 0.25s ease;
+	}
+	
+div.container > article > div.service > div > ul > li > a > div {
+	position : absolute;
+	bottom : 0;
+	left : 0;
+	z-index : 10;
+	max-width : 240px;
+	}
+	
+div.container > article > div.service > div > ul > li > a > div > span {
+	display : block;
+	min-height : 56px;
+	font-size : 22px;
+	line-height : 28px;
+	color : rgba(255, 255, 255, 1);
+	transition : all 0.25s ease;
+	}
+	
+div.container > article > div.service > div > ul > li > a:hover > img,
+div.container > article > div.service > div > ul > li > a:hover > div > span,
+div.container > article > div.service > div > ul > li > a:hover::before {
+	transform : scale(1.05);
+	}
+
+@media (min-width : 1201px) {
+	div.container > article > div.service {
+		padding-top : 30px;
+		}
+
+	div.container > article > div.service.main {
+		padding-bottom : 30px;
+		}
+
+	div.container > article > div.service > div {
+		padding : 0 30px;
+		}
+		
+	div.container > article > div.service > div > h6 {
+		padding : 30px 0;
+		font-size : 56px;
+		line-height : 68px;
+		}
+		
+	div.container > article > div.service > div > ul > li { 
+		width : calc(50% - 60px);
+		margin : 30px;
+		}
+		
+	div.container > article > div.service > div > ul > li > a::before {
+		left : 60px;
+		bottom : 116px;
+		}
+		
+	div.container > article > div.service > div > ul > li::before {
+		left : 90px;
+		bottom : 206px;
+		height : calc(100% - 176px);
+		}
+		
+	div.container > article > div.service > div > ul > li > a > div {
+		padding : 30px 60px;
+		}
+	}
+	
+@media (min-width : 961px) and (max-width : 1200px) {
+	div.container > article > div.service {
+		padding-top : 25px;
+		}
+
+	div.container > article > div.service.main {
+		padding-bottom : 25px;
+		}
+		
+	div.container > article > div.service > div {
+		padding : 0 25px;
+		}
+		
+	div.container > article > div.service > div > h6 {
+		padding : 25px 0;
+		font-size : 49px;
+		line-height : 59px;
+		}
+		
+	div.container > article > div.service > div > ul > li { 
+		width : calc(50% - 50px);
+		margin : 25px;
+		}
+		
+	div.container > article > div.service > div > ul > li > a::before {
+		left : 50px;
+		bottom : 106px;
+		}
+		
+	div.container > article > div.service > div > ul > li::before {
+		left : 80px;
+		bottom : 196px;
+		height : calc(100% - 176px);
+		}
+		
+	div.container > article > div.service > div > ul > li > a > div {
+		padding : 25px 50px;
+		}
+	}
+	
+@media (min-width : 721px) and (max-width : 960px) {
+	div.container > article > div.service {
+		padding-top : 20px;
+		}
+
+	div.container > article > div.service.main {
+		padding-bottom : 20px;
+		}
+		
+	div.container > article > div.service > div {
+		padding : 0 20px;
+		}
+		
+	div.container > article > div.service > div > h6 {
+		padding : 20px 0;
+		font-size : 42px;
+		line-height : 52px;	
+		}
+		
+	div.container > article > div.service > div > ul > li { 
+		width : calc(50% - 40px);
+		margin : 20px;
+		}
+		
+	div.container > article > div.service > div > ul > li > a::before {
+		left : 40px;
+		bottom : 86px;
+		}
+		
+	div.container > article > div.service > div > ul > li::before {
+		left : 70px;
+		bottom : 156px;
+		height : calc(100% - 136px);
+		}
+		
+	div.container > article > div.service > div > ul > li > a > div {
+		padding : 20px 40px;
+		}
+	}
+	
+@media (min-width : 481px) and (max-width : 720px) {
+	div.container > article > div.service {
+		padding-top : 15px;
+		}
+
+	div.container > article > div.service.main {
+		padding-bottom : 15px;
+		}
+		
+	div.container > article > div.service > div {
+		padding : 0 15px;
+		}
+		
+	div.container > article > div.service > div > h6 {
+		padding : 15px 0;
+		font-size : 35px;
+		line-height : 43px;	
+		}
+		
+	div.container > article > div.service > div > ul > li { 
+		width : 100%;
+		margin : 15px;
+		}
+
+	div.container > article > div.service > div > ul > li > a::before {
+		left : 30px;
+		bottom : 86px;
+		}
+		
+	div.container > article > div.service > div > ul > li::before {
+		left : 60px;
+		bottom : 161px;
+		height : calc(100% - 146px);
+		}
+		
+	div.container > article > div.service > div > ul > li > a > div {
+		padding : 15px 30px;
+		}
+	}
+	
+@media (max-width : 480px) {
+	div.container > article > div.service {
+		padding-top : 10px;
+		}
+
+	div.container > article > div.service.main {
+		padding-bottom : 10px;
+		}
+		
+	div.container > article > div.service > div {
+		padding : 0 10px;
+		}
+		
+	div.container > article > div.service > div > h6 {
+		padding : 10px 0;
+		font-size : 28px;
+		line-height : 34px;
+		}
+		
+	div.container > article > div.service > div > ul > li { 
+		width : 100%;
+		margin : 10px;
+		}
+
+	div.container > article > div.service > div > ul > li > a::before {
+		left : 20px;
+		bottom : 76px;
+		}
+		
+	div.container > article > div.service > div > ul > li::before {
+		left : 50px;
+		bottom : 146px;
+		height : calc(100% - 136px);
+		}
+		
+	div.container > article > div.service > div > ul > li > a > div {
+		padding : 10px 20px;
+		}
+	}

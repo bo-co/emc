@@ -22,11 +22,6 @@ div.container > article > div.content > blockquote {
 	line-height : 28px;
 	text-align : center;
 	}
-
-div.container > article > div.content > h6 > span,	
-div.container > article > div.content > blockquote > span {	
-	background-color : rgba(240, 207, 179, 1);
-	}
 		
 @media (min-width : 1201px) {
 	div.container > article {

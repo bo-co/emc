@@ -24,7 +24,7 @@ div.form > form > h6,
 div.form > form > blockquote,
 div.form.success > div > span,
 div.form.success > div > blockquote {
-	max-width : 960px;
+	max-width : 840px;
 	margin : 0 auto;
 	text-align : center;
 	}
