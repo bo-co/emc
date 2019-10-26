@@ -32,6 +32,9 @@ function resize() {
 	if ($('div.container > article > div.swiper-main').length !== 0) {
 		$('div.container > article > div.swiper-main').css({"width" : $(window).width() + "px"});
 		}
+	if ($('div.container > article > div.suppliers > div > div.swiper-suppliers').length !== 0) {
+		$('div.container > article > div.suppliers').css({"width" : $(window).width() + "px"});
+		}
 	}
 	
 $(document).ready(function() {
