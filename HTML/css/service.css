@@ -45,7 +45,6 @@ div.container > article > div.service > div > ul > li > a::before {
 	font-size : 60px;
 	line-height : 60px;
 	color : rgba(255, 255, 255, 1);
-	transition : all 0.25s ease;
    	}
    	
 div.container > article > div.service > div > ul > li::before {
@@ -68,6 +67,10 @@ div.container > article > div.service > div > ul > li > a > img {
 	transition : all 0.25s ease;
 	}
 	
+div.container > article > div.service > div > ul > li > a:hover > img {
+	transform : scale(1.05);
+	}
+	
 div.container > article > div.service > div > ul > li > a > div {
 	position : absolute;
 	bottom : 0;
@@ -82,13 +85,6 @@ div.container > article > div.service > div > ul > li > a > div > span {
 	font-size : 22px;
 	line-height : 28px;
 	color : rgba(255, 255, 255, 1);
-	transition : all 0.25s ease;
-	}
-	
-div.container > article > div.service > div > ul > li > a:hover > img,
-div.container > article > div.service > div > ul > li > a:hover > div > span,
-div.container > article > div.service > div > ul > li > a:hover::before {
-	transform : scale(1.05);
 	}
 	
 div.container > article > div.service.main > div > a {
