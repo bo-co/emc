@@ -1,19 +1,7 @@
 @charset "UTF-8";
 	
-.chart-text {
-	font-size : 18px;
-  	-moz-transform : translateY(25%);
-  	-ms-transform : translateY(25%);
-  	-webkit-transform : translateY(25%);
-  	transform : translateY(25%);
-	}
-	
 .chart-percent {
   	font-size : 0.6em;
-  	/* -moz-transform : translateY(-19%);
-  	-ms-transform : translateY(-19%);
-  	-webkit-transform : translateY(-19%);
-  	transform : translateY(-19%); */
 	}
 	
 .ring-60 .donut-ring {
