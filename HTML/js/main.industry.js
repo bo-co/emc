@@ -22,7 +22,7 @@ $(document).ready(function() {
 				if (!$(this).hasClass('active') && $(window).scrollTop() > $(this).offset().top - $(window).innerHeight() + $(this).outerHeight()/2) {
 					$(this).addClass('ring-' + $(this).data('percent'));
 					$(this).addClass('active');
-					startCount($(this).find('g > text'), $(this).data('percent'));
+					startCount($(this).find('text'), $(this).data('percent'));
 					}
 				});
 			});
