@@ -259,7 +259,7 @@ div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li >
 	
 @media (min-width : 721px) and (max-width : 960px) {
 	div.container > article > div.suppliers {
-		padding : 20px 40px;
+		padding : 20px 0;
 		}
 		
 	div.container > article > div.suppliers > div > h6 {
@@ -269,13 +269,13 @@ div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li >
 		}
 		
 	div.container > article > div.suppliers > div > div.swiper-suppliers {
-		padding : 0 40px;
 		margin : 20px auto;
 		}
 		
 	div.container > article > div.suppliers > div > div.swiper-suppliers::before,
 	div.container > article > div.suppliers > div > div.swiper-suppliers::after {
 		width : 40px;
+		display : none;
 		}
 
 	div.container > article > div.suppliers > div > div.swiper-suppliers > div {
@@ -295,6 +295,11 @@ div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li >
 		
 	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div > span {
 		padding : 20px 0 0 0;
+		}
+		
+	div.container > article > div.suppliers > div > div.swiper-suppliers > div.prev,
+	div.container > article > div.suppliers > div > div.swiper-suppliers > div.next {
+		display : none;
 		}
 	}
 	
