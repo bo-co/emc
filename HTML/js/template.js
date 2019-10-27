@@ -17,6 +17,7 @@ function loadJS(source, order) {
 	}
 
 function resize() {
+	$('div.container > article').css({"width" : $(window).width() + "px"});
 	if (window.innerWidth < 1201) {
 		if (!vhCSS) {
 			loadCSS('css/vh.css?' + $.now(), 'stylesheet');
@@ -28,12 +29,6 @@ function resize() {
 		}
 	else {
 		$('.scrollbar-nav').scrollbar('destroy');
-		}
-	if ($('div.container > article > div.swiper-main').length !== 0) {
-		$('div.container > article > div.swiper-main').css({"width" : $(window).width() + "px"});
-		}
-	if ($('div.container > article > div.suppliers > div > div.swiper-suppliers').length !== 0) {
-		$('div.container > article > div.suppliers').css({"width" : $(window).width() + "px"});
 		}
 	}
 	

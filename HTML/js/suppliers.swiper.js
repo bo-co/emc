@@ -8,7 +8,7 @@ $(document).ready(function() {
  				slidesPerView: 1.4,
  				centeredSlides: true,
  				breakpoints: {
-    				480: {
+    				481: {
       					slidesPerView: 2
     					},
     				961: {

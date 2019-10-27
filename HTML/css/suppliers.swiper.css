@@ -4,28 +4,25 @@ div.container > article > div.suppliers {
 	background-color : rgba(245, 245, 245, 1);
 	}
 	
-div.container > article > div.suppliers > div {
-	max-width : 1320px;
-	margin : 0 auto;
-	}
-	
-div.container > article > div.suppliers > div > h6 {
+div.container > article > div.suppliers > h6 {
 	font-family : "Bold", Arial, Tahoma, Verdana, sans-serif;
 	text-align : center;
 	}
 
-div.container > article > div.suppliers > div > div.swiper-suppliers,
-div.container > article > div.suppliers > div > div.swiper-suppliers > ul,
-div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li {
+div.container > article > div.suppliers > div.swiper-suppliers,
+div.container > article > div.suppliers > div.swiper-suppliers > ul,
+div.container > article > div.suppliers > div.swiper-suppliers > ul > li {
 	position : relative;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers {
+div.container > article > div.suppliers > div.swiper-suppliers {
+	max-width : 1320px;
+	margin : 0 auto;
 	overflow : hidden;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers::before,
-div.container > article > div.suppliers > div > div.swiper-suppliers::after {
+div.container > article > div.suppliers > div.swiper-suppliers::before,
+div.container > article > div.suppliers > div.swiper-suppliers::after {
 	position : absolute;
 	top : 0;
 	z-index : 5;
@@ -34,17 +31,17 @@ div.container > article > div.suppliers > div > div.swiper-suppliers::after {
 	content : "";
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers::before,
-div.container > article > div.suppliers > div > div.swiper-suppliers > div.prev {
+div.container > article > div.suppliers > div.swiper-suppliers::before,
+div.container > article > div.suppliers > div.swiper-suppliers > div.prev {
 	left : 0;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers::after,
-div.container > article > div.suppliers > div > div.swiper-suppliers > div.next {
+div.container > article > div.suppliers > div.swiper-suppliers::after,
+div.container > article > div.suppliers > div.swiper-suppliers > div.next {
 	right : 0;
 	}
 
-div.container > article > div.suppliers > div > div.swiper-suppliers > ul {
+div.container > article > div.suppliers > div.swiper-suppliers > ul {
 	display : flex;
 	display : -webkit-box;
 	display : -webkit-flex;
@@ -55,14 +52,14 @@ div.container > article > div.suppliers > div > div.swiper-suppliers > ul {
 	list-style : none;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > div {
+div.container > article > div.suppliers > div.swiper-suppliers > div {
 	position : absolute;
 	z-index : 10;
 	background-color : rgba(255, 255, 255, 1);
 	cursor : pointer;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > div::after {
+div.container > article > div.suppliers > div.swiper-suppliers > div::after {
 	position : absolute;
 	top : 0;
 	left : 0;
@@ -77,19 +74,19 @@ div.container > article > div.suppliers > div > div.swiper-suppliers > div::afte
 	transition : left 0.25s ease;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > div.prev::after {
+div.container > article > div.suppliers > div.swiper-suppliers > div.prev::after {
 	transform : rotate(180deg);
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > div.prev:hover::after {
+div.container > article > div.suppliers > div.swiper-suppliers > div.prev:hover::after {
 	left : -2px;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > div.next:hover::after {
+div.container > article > div.suppliers > div.swiper-suppliers > div.next:hover::after {
 	left : 2px;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > div > button {
+div.container > article > div.suppliers > div.swiper-suppliers > div > button {
 	display : block;
 	width : inherit;
 	height : inherit;
@@ -103,8 +100,8 @@ div.container > article > div.suppliers > div > div.swiper-suppliers > div > but
 	overflow : hidden;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > div > button::after,
-div.container > article > div.suppliers > div > div.swiper-suppliers > div > button::before {
+div.container > article > div.suppliers > div.swiper-suppliers > div > button::after,
+div.container > article > div.suppliers > div.swiper-suppliers > div > button::before {
 	content : "";
 	position : absolute;
 	top: 0;
@@ -112,65 +109,65 @@ div.container > article > div.suppliers > div > div.swiper-suppliers > div > but
 	width : 100%;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > div > button::after {
+div.container > article > div.suppliers > div.swiper-suppliers > div > button::after {
 	left : 0;
 	z-index : 10;
 	background-color : rgba(107, 166, 195, 1);
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > div > button::before {
+div.container > article > div.suppliers > div.swiper-suppliers > div > button::before {
 	z-index : 15;
 	background-color : rgba(0, 124, 162, 1);
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > div.prev > button::before {
+div.container > article > div.suppliers > div.swiper-suppliers > div.prev > button::before {
 	left : 100%;
 	transition : left 0.25s ease;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > div.prev:hover > button::before {
+div.container > article > div.suppliers > div.swiper-suppliers > div.prev:hover > button::before {
 	left : 0;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > div.next > button::before {
+div.container > article > div.suppliers > div.swiper-suppliers > div.next > button::before {
 	right : 100%;
 	transition : right 0.25s ease;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > div.next:hover > button::before {
+div.container > article > div.suppliers > div.swiper-suppliers > div.next:hover > button::before {
 	right : 0;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li {
+div.container > article > div.suppliers > div.swiper-suppliers > ul > li {
 	cursor : pointer;
 	opacity : 0.5;
 	transition : all 0.25s ease;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li:hover {
+div.container > article > div.suppliers > div.swiper-suppliers > ul > li:hover {
 	opacity : 0.75;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li.swiper-slide-active {
+div.container > article > div.suppliers > div.swiper-suppliers > ul > li.swiper-slide-active {
 	padding : 0 !important;
 	opacity : 1;
 	cursor : default;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div {
+div.container > article > div.suppliers > div.swiper-suppliers > ul > li > div {
 	height : 100%;
 	border : solid 1px rgba(217, 217, 217, 1);
 	background-color : rgba(255, 255, 255, 1);
 	text-align : center;
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div > span {
+div.container > article > div.suppliers > div.swiper-suppliers > ul > li > div > span {
 	display : block;
 	font-size : 22px;
 	line-height : 28px;	
 	}
 	
-div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div > img {
+div.container > article > div.suppliers > div.swiper-suppliers > ul > li > div > img {
 	width : 100%;
 	height : auto;
 	}
@@ -180,38 +177,38 @@ div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li >
 		padding : 30px 60px;
 		}
 		
-	div.container > article > div.suppliers > div > h6 {
+	div.container > article > div.suppliers > h6 {
 		padding : 30px 0;
 		font-size : 56px;
 		line-height : 68px;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers {
+	div.container > article > div.suppliers > div.swiper-suppliers {
 		padding : 0 60px;
 		margin : 30px auto;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers::before,
-	div.container > article > div.suppliers > div > div.swiper-suppliers::after {
+	div.container > article > div.suppliers > div.swiper-suppliers::before,
+	div.container > article > div.suppliers > div.swiper-suppliers::after {
 		width : 60px;
 		}
 
-	div.container > article > div.suppliers > div > div.swiper-suppliers > div {
+	div.container > article > div.suppliers > div.swiper-suppliers > div {
 		width : 60px;
 		height : 60px;
 		top : calc(50% - 30px);
 		}
 	
-	div.container > article > div.suppliers > div > div.swiper-suppliers > div::after {	
+	div.container > article > div.suppliers > div.swiper-suppliers > div::after {	
 		line-height : 60px;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li,
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div {
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li,
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li > div {
 		padding : 30px;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div > span {
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li > div > span {
 		padding : 30px 0 0 0;
 		}
 	}
@@ -221,131 +218,131 @@ div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li >
 		padding : 25px 50px;
 		}
 		
-	div.container > article > div.suppliers > div > h6 {
+	div.container > article > div.suppliers > h6 {
 		padding : 25px 0;
 		font-size : 49px;
 		line-height : 59px;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers {
+	div.container > article > div.suppliers > div.swiper-suppliers {
 		padding : 0 50px;
 		margin : 25px auto;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers::before,
-	div.container > article > div.suppliers > div > div.swiper-suppliers::after {
+	div.container > article > div.suppliers > div.swiper-suppliers::before,
+	div.container > article > div.suppliers > div.swiper-suppliers::after {
 		width : 50px;
 		}
 
-	div.container > article > div.suppliers > div > div.swiper-suppliers > div {
+	div.container > article > div.suppliers > div.swiper-suppliers > div {
 		width : 50px;
 		height : 50px;
 		top : calc(50% - 25px);
 		}
 	
-	div.container > article > div.suppliers > div > div.swiper-suppliers > div::after {	
+	div.container > article > div.suppliers > div.swiper-suppliers > div::after {	
 		line-height : 50px;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li,
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div {
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li,
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li > div {
 		padding : 25px;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div > span {
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li > div > span {
 		padding : 25px 0 0 0;
 		}
 	}
 	
 @media (min-width : 721px) and (max-width : 960px) {
-	div.container > article > div.suppliers {
+	div.container > article > div.suppliers,
+	div.container > article > div.suppliers > h6 {
 		padding : 20px 0;
 		}
 		
-	div.container > article > div.suppliers > div > h6 {
-		padding : 20px 0;
+	div.container > article > div.suppliers > h6 {
 		font-size : 42px;
 		line-height : 52px;	
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers {
+	div.container > article > div.suppliers > div.swiper-suppliers {
 		margin : 20px auto;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers::before,
-	div.container > article > div.suppliers > div > div.swiper-suppliers::after,
-	div.container > article > div.suppliers > div > div.swiper-suppliers > div {
+	div.container > article > div.suppliers > div.swiper-suppliers::before,
+	div.container > article > div.suppliers > div.swiper-suppliers::after,
+	div.container > article > div.suppliers > div.swiper-suppliers > div {
 		display : none;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li,
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div {
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li,
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li > div {
 		padding : 20px;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div > span {
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li > div > span {
 		padding : 20px 0 0 0;
 		}
 	}
 	
 @media (min-width : 481px) and (max-width : 720px) {
-	div.container > article > div.suppliers {
+	div.container > article > div.suppliers,
+	div.container > article > div.suppliers > h6 {
 		padding : 15px 0;
 		}
 		
-	div.container > article > div.suppliers > div > h6 {
-		padding : 15px 0;
+	div.container > article > div.suppliers > h6 {
 		font-size : 35px;
 		line-height : 43px;	
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers {
+	div.container > article > div.suppliers > div.swiper-suppliers {
 		margin : 15px auto;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers::before,
-	div.container > article > div.suppliers > div > div.swiper-suppliers::after,
-	div.container > article > div.suppliers > div > div.swiper-suppliers > div {
+	div.container > article > div.suppliers > div.swiper-suppliers::before,
+	div.container > article > div.suppliers > div.swiper-suppliers::after,
+	div.container > article > div.suppliers > div.swiper-suppliers > div {
 		display : none;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li,
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div {
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li,
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li > div {
 		padding : 15px;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div > span {
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li > div > span {
 		padding : 15px 0 0 0;
 		}
 	}
 	
 @media (max-width : 480px) {
-	div.container > article > div.suppliers {
+	div.container > article > div.suppliers,
+	div.container > article > div.suppliers > h6 {
 		padding : 10px 0;
 		}
 		
-	div.container > article > div.suppliers > div > h6 {
-		padding : 10px 0;
+	div.container > article > div.suppliers > h6 {
 		font-size : 28px;
 		line-height : 34px;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers {
+	div.container > article > div.suppliers > div.swiper-suppliers {
 		margin : 10px auto;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers::before,
-	div.container > article > div.suppliers > div > div.swiper-suppliers::after,
-	div.container > article > div.suppliers > div > div.swiper-suppliers > div {
+	div.container > article > div.suppliers > div.swiper-suppliers::before,
+	div.container > article > div.suppliers > div.swiper-suppliers::after,
+	div.container > article > div.suppliers > div.swiper-suppliers > div {
 		display : none;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li,
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div {
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li,
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li > div {
 		padding : 10px;
 		}
 		
-	div.container > article > div.suppliers > div > div.swiper-suppliers > ul > li > div > span {
+	div.container > article > div.suppliers > div.swiper-suppliers > ul > li > div > span {
 		padding : 10px 0 0 0;
 		}
 	}
