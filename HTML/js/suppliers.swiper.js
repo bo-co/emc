@@ -5,10 +5,10 @@ $(document).ready(function() {
  		setTimeout(function() {
 			suppliers = new Swiper('div.swiper-suppliers', {
     			loop: true,
- 				slidesPerView: 1,
+ 				slidesPerView: 1.4,
  				centeredSlides: true,
  				breakpoints: {
-    				481: {
+    				480: {
       					slidesPerView: 2
     					},
     				961: {
