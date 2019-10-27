@@ -18,7 +18,6 @@ $(document).ready(function() {
     				onlyInViewport: false
   					},
   				speed: 1200,
-  				preloadImages: true,
   				pagination: {
         			el: 'div.container > article > div.swiper-main > div',
         			clickable: true
