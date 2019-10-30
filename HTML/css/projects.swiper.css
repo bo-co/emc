@@ -1,9 +1,4 @@
 @charset "UTF-8";
-
-div.container > article > div.projects {
-	max-width : 1320px;
-	margin : 0 auto;
-	}
 	
 div.container > article > div.projects > blockquote {
 	font-size : 22px;
@@ -73,8 +68,120 @@ div.container > article > div.projects > div.swiper-projects > ul > li {
 	}
 	
 div.container > article > div.projects > div.swiper-projects {
+	max-width : 1300px;
+	margin : 0 auto;
 	overflow : hidden;
 	}
+	
+div.container > article > div.projects > div.swiper-projects::before,
+div.container > article > div.projects > div.swiper-projects::after {
+	position : absolute;
+	top : 0;
+	z-index : 5;
+	height : 100%;
+	width : 50px;
+	background-color : rgba(255, 255, 255, 1);
+	content : "";
+	}
+	
+div.container > article > div.projects > div.swiper-projects::before,
+div.container > article > div.projects > div.swiper-projects > div.button.prev {
+	left : 0;
+	}
+	
+div.container > article > div.projects > div.swiper-projects::after,
+div.container > article > div.projects > div.swiper-projects > div.button.next {
+	right : 0;
+	}
+	
+div.container > article > div.projects > div.swiper-projects > div.button {
+	position : absolute;
+	top : calc(50% - 25px);
+	z-index : 10;
+	width : 50px;
+	height : 50px;
+	cursor : pointer;
+	}
+	
+div.container > article > div.projects > div.swiper-projects > div.button::after {
+	position : absolute;
+	top : 0;
+	left : 0;
+	z-index : 20;
+	width : 100%;
+	height : 100%;
+	font-size : 22px;
+	font-family : "icomoon" !important;
+	line-height : 50px;
+    content: "\e907";
+	text-align : center;
+	color : rgba(255, 255, 255, 1);
+	transition : left 0.25s ease;
+	}
+	
+div.container > article > div.projects > div.swiper-projects > div.button.prev::after {
+	transform : rotate(180deg);
+	}
+	
+div.container > article > div.projects > div.swiper-projects > div.button.prev:hover::after {
+	left : -2px;
+	}
+	
+div.container > article > div.projects > div.swiper-projects > div.button.next:hover::after {
+	left : 2px;
+	}
+	
+div.container > article > div.projects > div.swiper-projects > div.button > button {
+	display : block;
+	width : inherit;
+	height : inherit;
+	padding : 0;
+	margin : 0;
+	border : 0;
+	position : absolute;
+	top : 0;
+	left : 0;
+	z-index : 10;
+	overflow : hidden;
+	}
+	
+div.container > article > div.projects > div.swiper-projects > div.button > button::after,
+div.container > article > div.projects > div.swiper-projects > div.button > button::before {
+	content : "";
+	position : absolute;
+	top: 0;
+	height : 100%;
+	width : 100%;
+	}
+	
+div.container > article > div.projects > div.swiper-projects > div.button > button::after {
+	left : 0;
+	z-index : 10;
+	background-color : rgba(107, 166, 195, 1);
+	}
+	
+div.container > article > div.projects > div.swiper-projects > div.button > button::before {
+	z-index : 15;
+	background-color : rgba(0, 124, 162, 1);
+	}
+	
+div.container > article > div.projects > div.swiper-projects > div.button.prev > button::before {
+	left : 100%;
+	transition : left 0.25s ease;
+	}
+	
+div.container > article > div.projects > div.swiper-projects > div.button.prev:hover > button::before {
+	left : 0;
+	}
+	
+div.container > article > div.projects > div.swiper-projects > div.button.next > button::before {
+	right : 100%;
+	transition : right 0.25s ease;
+	}
+	
+div.container > article > div.projects > div.swiper-projects > div.button.next:hover > button::before {
+	right : 0;
+	}	
 	
 div.container > article > div.projects > div.swiper-projects > div.swiper-pagination {
 	position : absolute;
@@ -106,108 +213,16 @@ div.container > article > div.projects > div.swiper-projects > ul > li > div > i
 div.container > article > div.projects > div.swiper-projects > ul > li > div > span {
 	display : none;
 	}
-	
+
+div.container > article > div.projects > div.description {
+	max-width : 1300px;
+	margin : 0 auto;
+	}
+		
 div.container > article > div.projects > div.description > span {
 	display : block;
 	font-size : 18px;
 	line-height : 24px;
-	padding : 0 120px 0 0;
-	}
-	
-div.container > article > div.projects > div.description > div.button {
-	position : absolute;
-	z-index : 10;
-	width : 50px;
-	height : 50px;
-	cursor : pointer;
-	}
-	
-div.container > article > div.projects > div.description > div.button.prev {
-	right : 50px;
-	}
-	
-div.container > article > div.projects > div.description > div.button.next {
-	right : 0;
-	}
-	
-div.container > article > div.projects > div.description > div.button::after {
-	position : absolute;
-	top : 0;
-	left : 0;
-	z-index : 20;
-	width : 100%;
-	height : 100%;
-	font-size : 22px;
-	font-family : "icomoon" !important;
-	line-height : 50px;
-    content: "\e907";
-	text-align : center;
-	color : rgba(255, 255, 255, 1);
-	transition : left 0.25s ease;
-	}
-	
-div.container > article > div.projects > div.description > div.button.prev::after {
-	transform : rotate(180deg);
-	}
-	
-div.container > article > div.projects > div.description > div.button.prev:hover::after {
-	left : -2px;
-	}
-	
-div.container > article > div.projects > div.description > div.button.next:hover::after {
-	left : 2px;
-	}
-	
-div.container > article > div.projects > div.description > div.button > button {
-	display : block;
-	width : inherit;
-	height : inherit;
-	padding : 0;
-	margin : 0;
-	border : 0;
-	position : absolute;
-	top : 0;
-	left : 0;
-	z-index : 10;
-	overflow : hidden;
-	}
-	
-div.container > article > div.projects > div.description > div.button > button::after,
-div.container > article > div.projects > div.description > div.button > button::before {
-	content : "";
-	position : absolute;
-	top: 0;
-	height : 100%;
-	width : 100%;
-	}
-	
-div.container > article > div.projects > div.description > div.button > button::after {
-	left : 0;
-	z-index : 10;
-	background-color : rgba(107, 166, 195, 1);
-	}
-	
-div.container > article > div.projects > div.description > div.button > button::before {
-	z-index : 15;
-	background-color : rgba(0, 124, 162, 1);
-	}
-	
-div.container > article > div.projects > div.description > div.button.prev > button::before {
-	left : 100%;
-	transition : left 0.25s ease;
-	}
-	
-div.container > article > div.projects > div.description > div.button.prev:hover > button::before {
-	left : 0;
-	}
-	
-div.container > article > div.projects > div.description > div.button.next > button::before {
-	right : 100%;
-	transition : right 0.25s ease;
-	}
-	
-div.container > article > div.projects > div.description > div.button.next:hover > button::before {
-	right : 0;
 	}
 	
 @media (min-width : 1201px) {
@@ -229,17 +244,17 @@ div.container > article > div.projects > div.description > div.button.next:hover
 		line-height : 68px;
 		}
 		
-	div.container > article > div.projects > div.swiper-projects {
-		margin : 30px 0 0 0;
-		}
-		
 	div.container > article > div.projects > div.description {
-		min-height : 110px;
-		padding : 30px 0;
+		padding : 0 80px 30px 80px;
 		}
 		
-	div.container > article > div.projects > div.description > div.button {
-		top : 30px;
+	div.container > article > div.projects > div.swiper-projects {
+		padding : 0 50px;
+		margin : 30px auto;
+		}
+		
+	div.container > article > div.projects > div.swiper-projects > ul > li {
+		padding : 0 30px;
 		}
 	}
 	
@@ -262,27 +277,27 @@ div.container > article > div.projects > div.description > div.button.next:hover
 		line-height : 59px;
 		}
 		
-	div.container > article > div.projects > div.swiper-projects {
-		margin : 25px 0 0 0;
-		}
-		
 	div.container > article > div.projects > div.description {
-		min-height : 100px;
-		padding : 25px 0;
+		padding : 0 75px 25px 75px;
 		}
 		
-	div.container > article > div.projects > div.description > div.button {
-		top : 25px;
+	div.container > article > div.projects > div.swiper-projects {
+		padding : 0 50px;
+		margin : 25px auto;
+		}
+		
+	div.container > article > div.projects > div.swiper-projects > ul > li {
+		padding : 0 25px;
 		}
 	}
 	
 @media (min-width : 721px) and (max-width : 960px) {
 	div.container > article > div.projects {
-		padding : 20px 40px;
+		padding : 20px 0;
 		}
 		
 	div.container > article > div.projects > blockquote {
-		padding : 20px 0;
+		padding : 20px 40px;
 		}
 		
 	div.container > article > div.projects > a {
@@ -292,85 +307,88 @@ div.container > article > div.projects > div.description > div.button.next:hover
 	div.container > article > div.projects > h6 {
 		padding : 20px 0;
 		font-size : 42px;
-		line-height : 52px;	
-		}
-		
-	div.container > article > div.projects > div.swiper-projects {
-		margin : 20px 0 0 0;
+		line-height : 52px;
 		}
 		
 	div.container > article > div.projects > div.description {
-		min-height : 90px;
-		padding : 20px 0;
+		padding : 0 40px 20px 40px;
 		}
 		
-	div.container > article > div.projects > div.description > div.button {
-		top : 20px;
+	div.container > article > div.projects > div.swiper-projects {
+		margin : 20px auto;
+		}
+
+	div.container > article > div.projects > div.swiper-projects::before,
+	div.container > article > div.projects > div.swiper-projects::after,
+	div.container > article > div.projects > div.swiper-projects > div.button {
+		display : none;
 		}
 	}
 	
 @media (min-width : 481px) and (max-width : 720px) {
 	div.container > article > div.projects {
-		padding : 15px 30px;
+		padding : 15px 0;
 		}
 		
 	div.container > article > div.projects > blockquote {
-		padding : 15px 0;
+		padding : 15px 30px;
 		}
 		
 	div.container > article > div.projects > a {
     	margin: 15px auto;
 		}
-
+		
 	div.container > article > div.projects > h6 {
 		padding : 15px 0;
 		font-size : 35px;
 		line-height : 43px;	
 		}
 		
-	div.container > article > div.projects > div.swiper-projects {
-		margin : 15px 0 0 0;
-		}
-		
 	div.container > article > div.projects > div.description {
-		min-height : 80px;
-		padding : 15px 0;
+		padding : 0 30px 15px 30px;
 		}
 		
-	div.container > article > div.projects > div.description > div.button {
-		top : 15px;
+	div.container > article > div.projects > div.swiper-projects {
+		margin : 15px auto;
+		}
+
+	div.container > article > div.projects > div.swiper-projects::before,
+	div.container > article > div.projects > div.swiper-projects::after,
+	div.container > article > div.projects > div.swiper-projects > div.button {
+		display : none;
 		}
 	}
 	
 @media (max-width : 480px) {
 	div.container > article > div.projects {
-		padding : 10px 20px;
-		}
-
-	div.container > article > div.projects > blockquote {
 		padding : 10px 0;
+		}
+		
+	div.container > article > div.projects > blockquote {
+		padding : 10px 20px;
 		}
 		
 	div.container > article > div.projects > a {
     	margin: 10px auto;
 		}
-
+		
 	div.container > article > div.projects > h6 {
 		padding : 10px 0;
 		font-size : 28px;
 		line-height : 34px;
 		}
 		
-	div.container > article > div.projects > div.swiper-projects {
-		margin : 10px 0 0 0;
-		}
-		
 	div.container > article > div.projects > div.description {
-		min-height : 70px;
-		padding : 10px 0;
+		padding : 0 20px 10px 20px;
 		}
 		
-	div.container > article > div.projects > div.description > div.button {
-		top : 10px;
+	div.container > article > div.projects > div.swiper-projects {
+		margin : 10px auto;
+		}
+
+	div.container > article > div.projects > div.swiper-projects::before,
+	div.container > article > div.projects > div.swiper-projects::after,
+	div.container > article > div.projects > div.swiper-projects > div.button {
+		display : none;
 		}
 	}

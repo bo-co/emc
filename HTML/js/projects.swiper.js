@@ -1,15 +1,15 @@
 var suppliers = null;
 
 $(document).ready(function() {
- 	if (!suppliers && $('div.swiper-projects').length !== 0) {
+ 	if (!suppliers && $('div.container > article > div.projects > div.swiper-projects').length !== 0) {
  		setTimeout(function() {
-			suppliers = new Swiper('div.swiper-projects', {
+			suppliers = new Swiper('div.container > article > div.projects > div.swiper-projects', {
     			loop: true,
  				slidesPerView: 1,
  				centeredSlides: true,
     			navigation: {
-    				nextEl: 'div.container > article > div.projects > div.description > div.button.next',
-    				prevEl: 'div.container > article > div.projects > div.description > div.button.prev'
+    				nextEl: 'div.container > article > div.projects > div.swiper-projects > div.button.next',
+    				prevEl: 'div.container > article > div.projects > div.swiper-projects > div.button.prev'
   					},
   				on: {
   					init: function () {
