@@ -13,10 +13,12 @@ $(document).ready(function() {
   					},
   				on: {
   					init: function () {
-    					$('div.container > article > div.projects > div.description > span').text($('div.container > article > div.projects > div.swiper-projects > ul > li.swiper-slide-active > div > span').text());
-    					},
+  						$('div.container > article > div.projects > div.description').html('');
+  						$('div.container > article > div.projects > div.swiper-projects > ul > li.swiper-slide-active > div > a').clone(true).appendTo('div.container > article > div.projects > div.description');
+						},
     				transitionStart: function () {
-    					$('div.container > article > div.projects > div.description > span').text($('div.container > article > div.projects > div.swiper-projects > ul > li.swiper-slide-active > div > span').text());
+    					$('div.container > article > div.projects > div.description').html('');
+    					$('div.container > article > div.projects > div.swiper-projects > ul > li.swiper-slide-active > div > a').clone(true).appendTo('div.container > article > div.projects > div.description');
     					}
     				},
     			pagination: {
